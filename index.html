@@ -88,14 +88,14 @@
         return ans;
       };
 
-      for (var i = 1; i < cells.length; i++) {
+      for (var i = 0; i < cells.length; i++) {
         var cell = cells[i];
 
         cell.onclick = function () {
           var columnIndex = this.cellIndex + 1;
 
           var rowIndex = this.parentNode.rowIndex + 1;
-
+          console.log(columnIndex, rowIndex);
           var ans = solve(rowIndex - 1, columnIndex - 1);
 
           for (var i = 0; i < ans.length; i++) {
