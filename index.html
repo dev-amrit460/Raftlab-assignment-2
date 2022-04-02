@@ -41,8 +41,7 @@
   <body>
     <span style="color: #4CAF50; font-size: 30px"> Knight Assignment </span>
     <br /><br />
-    <button onclick="reset()">Reset</button>
-    <br /><br />
+    <h4>Click on Board to select Knight position</h4>
 
     <script type="text/javascript">
       var center = document.createElement("center");
@@ -103,7 +102,7 @@
             var x = ans[i][0];
             var y = ans[i][1];
             var cell = cells[x * 8 + y];
-            cell.style.backgroundColor = "red";
+            cell.style.backgroundColor = "pink";
           }
         };
       }
@@ -112,6 +111,7 @@
        window.location.reload();
       }
     </script>
-
+    <br></br>
+<button onclick="reset()">Reset</button>
   </body>
 </html>
